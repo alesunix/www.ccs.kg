@@ -1,0 +1,358 @@
+/* Reset
+----------------------------------------------------------------------------------------------------*/
+
+html, body, div, form, fieldset, legend, label {
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, section, article, aside, footer {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption {font-weight: 400;}
+
+fieldset, img {border: none;}
+
+a, :focus {outline: none;}
+
+/* Clearfix
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Base elements
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	background: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	color: #333;
+}
+
+textarea {
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+a {
+	color: #1c150c;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+/*a:visited {
+	color: #999;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	margin: 0 0 18px;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 130%;
+	border-bottom: 1px solid #999;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+p, .p {
+	margin: 0 0 18px;
+}
+
+ul, ol {
+	padding-left: 20px;
+	margin: 0 0 18px;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input {vertical-align: middle;}
+
+/* Main classes
+----------------------------------------------------------------------------------------------------*/
+
+.f-left {float: left;}
+.f-right {float: right;}
+.f-center {margin-left: auto; margin-right: auto; display: block;}
+
+.t-left {text-align: left;}
+.t-center {text-align: center;}
+.t-right {text-align: right;}
+.t-justify {text-align: justify;}
+
+.noscreen {display: none;}
+.hidden {display: block; text-indent: -1000px; overflow: hidden;}
+.nolink {text-decoration: none;}
+
+.error, .delete, .attention {color: #a00;}
+.important {color: #000; background: #999;}
+
+.pagination {text-align: center;}
+.more {text-align: right; display: block;}
+
+img.left {float: left; margin: 3px 3px 3px 0;}
+img.right {float: right; margin: 3px 0 3px 3px;}
+
+ul.ul li {list-style-type: circle; }
+
+/* Base layout
+-----------------------------------------------------------------------------*/
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#header {
+	height: 160px;
+	border-bottom: 1px solid #999;
+}
+
+#middle {
+	height: 1%;
+	position: relative;
+	border-right: 250px solid #ececec;
+}
+
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+
+#content {
+	padding: 0 20px;
+}
+
+#sidebar {
+	float: right;
+	margin-right: -250px;
+	width: 250px;
+	position: relative;
+	background: #ececec;
+}
+
+#footer {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+#header h2 {
+	background: url("i/logo.jpg") no-repeat;
+	/*text-indent: -1000px;
+	display: block;
+	width: 228px;
+	height: 206px;*/
+	margin-top: 5px;
+	border: none;
+	padding-left: 20px;
+	/*float: left;*/
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 200%;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.table {
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+
+.table td, .table  th {
+    background: none repeat scroll 0 0 #ECECEC;
+    padding: 2px 5px;
+}
+
+.table  th {
+	text-align: center;
+	font-weight: bold;
+}
+
+.products div {
+	float: left;
+	width: 49%;
+	padding-bottom: 20px;
+}
+
+.menu li {
+	display: inline;
+	margin: 3px 20px 3px 0;
+}
+
+.menu ul {
+	padding: 0;
+}
+
+a.selected {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
+/* Sidebar
+-----------------------------------------------------------------------------*/
+
+#sidebar h3, #sidebar p {
+	padding: 10px;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footmenu {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#footer p {
+	font-size: 85%;
+}
+
+/* Absolute
+-----------------------------------------------------------------------------*/
+
+#mainmenu {
+	position: absolute;
+	width: 10000px;
+	top: 146px;
+	left: 0;
+	/*text-align: center;*/
+}
+
+#mainmenu ul {
+	padding: 0;
+}
+
+#mainmenu a {
+	background: #ececec;
+	padding: 5px 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 10px 10px 0 0;
+}
+
+#mainmenu a.selected {
+	background: #999;
+	font-weight: normal;
+	color: #fff;
+}
+
+.contacts {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+/* Additional
+-----------------------------------------------------------------------------*/
+
+#share42 {
+  display: inline-block;
+  padding: 3px 0 0 6px;
+  background: #FFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+}
+#share42:hover {
+  background: #F6F6F6;
+  border: 1px solid #D4D4D4;
+  box-shadow: 0 0 5px #DDD;
+}
+#share42 a {opacity: 0.5;}
+#share42:hover a {opacity: 0.7}
+#share42 a:hover {opacity: 1}
+
+
+div#qTip {
+	padding: 3px;
+	border: 1px solid #999;
+	display: none;
+	background: #ececec;
+	color: #000;
+	text-align: left;
+	font-size: 90%;
+	position: absolute;
+	z-index: 1000;
+	opacity: 0.9;
+}
