@@ -1,0 +1,242 @@
+/* FOR CODEPEN PRESENTATION ONLY */
+
+.buttons {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
+
+/* PASTE BELOW IN CSS */
+
+.buttons * {
+  transition: all .5s ease;
+}
+
+.buttons {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* .butWrap {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;  
+  -ms-flex-wrap: wrap;  
+  flex-wrap: wrap;
+  -webkit-align-content: flex-end;
+  -ms-align-content: end;
+  align-content: flex-end;
+  width: 100%;
+} */
+
+/* Common style */
+.butFrame {
+  position: relative;
+  overflow: visible;
+  margin: 5px;
+  width: 24%;
+  background: #313d46bd;
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 120px;
+}
+
+.butFrame img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  opacity: 0.8;
+  position: absolute;
+}
+
+.buttons > .butHeading {
+  clear: both;
+  margin: 0;
+  padding: 4em 1% 0;
+  color: #484B54;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+#buttons > .butHeading:first-child {
+  padding-top: 0em;
+}
+
+.butFrame .butTextWrap {
+  font-family: inherit;
+  padding: 2em;
+  color: #fff;
+  #text-transform: uppercase;
+  #font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.butFrame .butTextWrap::before,
+.butFrame .butTextWrap::after {
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+}
+
+.butFrame .butTextWrap,
+.butFrame .butTextWrap > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+
+.butFrame .butTextWrap > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.butFrame .butHeading {
+  #word-spacing: -0.15em;
+  font-weight: 800;
+  font-size: 15px;
+  text-shadow: #000 1px 1px 1px;
+  #font-family: inherit;
+}
+
+.butFrame .butHeading .butText {
+  font-weight: 300;
+}
+
+.butFrame .butHeading,
+.butFrame p {
+  margin: 0;
+  color: #fff;
+}
+
+.butFrame p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  font-family: inherit;
+}
+
+/* EFFECT */
+
+.butFrame img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+}
+
+.butFrame .butTextWrap::before,
+.butFrame .butTextWrap::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+.butFrame .butTextWrap::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.butFrame .butTextWrap::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  box-sizing: border-box;
+}
+.butFrame .butHeading {
+  padding-top: 5%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+.butFrame p {
+  #padding: 10px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* HOVER STYLES */
+
+.butFrame:hover img {
+  opacity: 0.4;
+}
+
+.butFrame:hover .butTextWrap::before,
+.butFrame:hover .butTextWrap::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.butFrame:hover .butHeading,
+.butFrame:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 950px) and (min-width: 701px){
+
+  .butFrame {
+    display:block;
+    width:47%;
+  }
+
+}
+
+@media all and (max-width: 700px) and (min-width: 0px){
+
+  .butFrame {
+    display:block;
+    width:100%;
+  }
+  h1 {
+    font-size: 20px;
+
+}
+
+}
+   .grey  {
+	color:#999;
+	face="Times New Roman";
+    text-shadow: 0.3px 0.4px 0.3px white, 0 0 1em /* Параметры тени */
+    padding: 10px;
+	font-size: 18px;
+   }
+   .blue  {
+	color:#08c;
+	face="Times New Roman";
+    text-shadow: 0.3px 0.4px 0.3px white; /* Параметры тени */
+    padding: 10px;
+	font-size: 18px;
+   }

@@ -1,0 +1,44 @@
+/*bootstrap navbar-fixed-top fix*/
+body {
+	padding-top: 5px;
+	#padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/*
+.content {
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+*/
+
+.dropdown a {
+	cursor: pointer;
+}
+
+.nav-list > .parent > a {
+	background: #999;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+	margin: 0 -19px;
+}
+
+.well-inverse {
+	background-color: rgb(255, 255, 255);
+	background-image: url(/i/fon.png);
+}
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
