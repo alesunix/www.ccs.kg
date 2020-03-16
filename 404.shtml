@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>Страница не найдена</title>
+</head>
+<body>
+        <h1>Страница не найдена</h1>
+        Запрошенный URL <!--#echo var="REQUEST_URI" --> не найден на сервере.
+        <hr>
+        <em><!--#echo var="HTTP_HOST" --></em>
+</body>
+</html>

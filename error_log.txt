@@ -1,0 +1,5 @@
+[26-Aug-2016 03:45:46 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\tlc.ccs.kg\www\template\blocks.inc.php on line 4
+[07-Mar-2017 05:04:24 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\ccs.kg\www\content\index.inc.php on line 4
+[07-Mar-2017 05:10:16 UTC] PHP Notice:  Undefined variable: donate in I:\home\ccs.kg\www\template\info.inc.php on line 65
+[03-Apr-2018 04:53:20 UTC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in I:\home\ccs.kg\www\template\menu.inc.php on line 17
+[03-Apr-2018 04:53:32 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\ccs.kg\www\template\menu.inc.php on line 15

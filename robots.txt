@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+Host: ccs.kg
+Sitemap: http://ccs.kg/sitemap.xml
