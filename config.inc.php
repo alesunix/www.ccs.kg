@@ -3,7 +3,7 @@
 
 # Общие настройки
 $config							= array();
-$config['sitelink']				= 'http://ccs.kg/'; # URL сайта, со слэшем на конце
+$config['sitelink']				= 'https://ccs.kg/'; # URL сайта, со слэшем на конце
 $config['sitename']				= 'Спецсвязь Кыргызстана'; # Заголовок сайта
 $config['slogan']				= '<br>Атайын Байланыш Кызматы'; # Слоган
 $config['encoding']				= 'utf-8'; # Кодировка

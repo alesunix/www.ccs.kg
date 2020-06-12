@@ -3,3 +3,14 @@
 [07-Mar-2017 05:10:16 UTC] PHP Notice:  Undefined variable: donate in I:\home\ccs.kg\www\template\info.inc.php on line 65
 [03-Apr-2018 04:53:20 UTC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in I:\home\ccs.kg\www\template\menu.inc.php on line 17
 [03-Apr-2018 04:53:32 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\ccs.kg\www\template\menu.inc.php on line 15
+[11-Jun-2020 08:27:34 UTC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in I:\home\ccs.kg\www\template\menu.inc.php on line 18
+[11-Jun-2020 08:27:47 UTC] PHP Notice:  Undefined offset: 2 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:27:47 UTC] PHP Notice:  Undefined offset: 1 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:18 UTC] PHP Notice:  Undefined offset: 2 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:18 UTC] PHP Notice:  Undefined offset: 1 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:22 UTC] PHP Notice:  Undefined offset: 2 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:22 UTC] PHP Notice:  Undefined offset: 1 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:25 UTC] PHP Notice:  Undefined offset: 2 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:25 UTC] PHP Notice:  Undefined offset: 1 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:27 UTC] PHP Notice:  Undefined offset: 2 in I:\home\ccs.kg\www\func.inc.php on line 27
+[11-Jun-2020 08:28:27 UTC] PHP Notice:  Undefined offset: 1 in I:\home\ccs.kg\www\func.inc.php on line 27

@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /secret/
+Disallow: /uslugi/
 Crawl-delay: 1
-Host: ccs.kg
-Sitemap: http://ccs.kg/sitemap.xml
+Host: https://ccs.kg
+Sitemap: https://ccs.kg/sitemap.xml
